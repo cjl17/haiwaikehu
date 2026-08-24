@@ -1,0 +1,62 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_sensing_msgs/msg/RadarObject.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_sensing_msgs/msg/RadarClassification.idl"
+#include "geometry_msgs/msg/Point.idl"
+#include "geometry_msgs/msg/Vector3.idl"
+
+module autoware_sensing_msgs {
+  module msg {
+    typedef float float__6[6];
+    module RadarObject_Constants {
+      const float INVALID_COV_VALUE = -1.0;
+      const uint8 MEASUREMENT_STATUS_INVALID = 0;
+      const uint8 MEASUREMENT_STATUS_MEASURED = 1;
+      const uint8 MEASUREMENT_STATUS_PREDICTED = 2;
+      const uint8 MEASUREMENT_STATUS_NEW = 3;
+      const uint8 MEASUREMENT_STATUS_UNKNOWN = 4;
+      const uint8 MOVEMENT_STATUS_INVALID = 0;
+      const uint8 MOVEMENT_STATUS_DYNAMIC = 1;
+      const uint8 MOVEMENT_STATUS_STATIC = 2;
+      const uint8 MOVEMENT_STATUS_UNKNOWN = 3;
+    };
+    struct RadarObject {
+      uint32 object_id;
+
+      uint16 age;
+
+      uint8 measurement_status;
+
+      uint8 movement_status;
+
+      geometry_msgs::msg::Point position;
+
+      geometry_msgs::msg::Vector3 velocity;
+
+      geometry_msgs::msg::Vector3 acceleration;
+
+      geometry_msgs::msg::Vector3 size;
+
+      float__6 position_covariance;
+
+      float__6 velocity_covariance;
+
+      float__6 acceleration_covariance;
+
+      float__6 size_covariance;
+
+      float orientation;
+
+      float orientation_std;
+
+      float orientation_rate;
+
+      float orientation_rate_std;
+
+      float existence_probability;
+
+      sequence<autoware_sensing_msgs::msg::RadarClassification> classifications;
+    };
+  };
+};

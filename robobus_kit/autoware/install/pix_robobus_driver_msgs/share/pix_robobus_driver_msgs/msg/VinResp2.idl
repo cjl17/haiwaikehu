@@ -1,0 +1,53 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VinResp2.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VinResp2 {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin08;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin09;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin10;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin11;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin12;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin13;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin14;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vin15;
+    };
+  };
+};

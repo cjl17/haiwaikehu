@@ -1,0 +1,31 @@
+
+ORIN1:  # 域控1 也是会话名称
+  passworld: nvidia
+  ManuRun:  # 开机后在通过nicegui执行列表
+    - autoware_robobus_orin1
+  BootupRun:  # 开机自启项列表
+    - script_executor
+    - bev_data_run
+    - disk_safe
+    - camera_run
+    - auto_web_app
+    - cam_containe_restart
+    - autoware_system_main
+
+
+ORIN2: # 域控2 也是会话名称
+  passworld: pixmoving
+  ManuRun:
+    - autoware_robobus_orin2
+  BootupRun:  
+    - script_executor
+    - pixmoving_hmi
+    - vehicle_interface
+    - combined_navigation
+    - autoware_system_main
+    - key_data_recorder
+    - zenoh_router
+    - disk_safe
+    - bev_data_run
+    - auto_web_app
+    - failcase_tools

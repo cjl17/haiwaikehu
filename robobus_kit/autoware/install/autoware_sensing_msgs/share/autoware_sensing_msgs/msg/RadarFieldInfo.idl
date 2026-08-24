@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_sensing_msgs/msg/RadarFieldInfo.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/String.idl"
+
+module autoware_sensing_msgs {
+  module msg {
+    struct RadarFieldInfo {
+      std_msgs::msg::String field_name;
+
+      boolean min_value_available;
+
+      boolean max_value_available;
+
+      boolean resolution_available;
+
+      float min_value;
+
+      float max_value;
+
+      float resolution;
+    };
+  };
+};

@@ -1,0 +1,392 @@
+cameras:
+  camera0:
+    camera_id: 0
+    # src
+    device: "/dev/video2"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera0/camera_link"
+    camera_name: "test_camera0"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "front_top/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h264_bitrate: 500000        
+    h264_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h264_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h264_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h264_topic_name: "front_top/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "front_top/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "front_top/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5000
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: "front_top/camera_raw"
+    rgb_nvunixfdsink_path_1: "/tmp/camera0_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera1:
+    camera_id: 1
+    # src
+    device: "/dev/video1"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera1/camera_link"
+    camera_name: "test_camera1"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "front_3mm/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h264_bitrate: 500000
+    h264_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h264_iframeinterval: 10             #keyframe interval, default 30, should be smaller when high speed motion or low framerate
+    h264_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h264_topic_name: "front_3mm/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "front_3mm/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "front_3mm/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5001
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera1_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera2:
+    camera_id: 2
+    # src
+    device: "/dev/video0"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera2/camera_link"
+    camera_name: "test_camera2"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "rear/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    h264_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h264_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h264_iframeinterval: 10             #keyframe interval, default 30, should be smaller when high speed motion or low framerate
+    h264_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h264_topic_name: "rear/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "rear/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "rear/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5002
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera2_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera3:
+    camera_id: 3
+    # src
+    device: "/dev/video3"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera3/camera_link"
+    camera_name: "test_camera3"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "front_left/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    h264_topic_name: "front_left/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "front_left/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "front_left/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5003
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera3_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera4:
+    camera_id: 4
+    # src
+    device: "/dev/video4"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera4/camera_link"
+    camera_name: "test_camera4"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "front_right/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    h264_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h264_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h264_iframeinterval: 10             #keyframe interval, default 30, should be smaller when high speed motion or low framerate
+    h264_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h264_topic_name: "front_right/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "front_right/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "front_right/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5004
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera4_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera5:
+    camera_id: 5
+    # src
+    device: "/dev/video5"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera5/camera_link"
+    camera_name: "test_camera5"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "rear_left/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    h264_topic_name: "rear_left/camera_image_h264"
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "rear_left/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "rear_left/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5005
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera5_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera6:
+    camera_id: 6
+    # src
+    device: "/dev/video6"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera6/camera_link"
+    camera_name: "test_camera6"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "rear_right/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "rear_right/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "rear_right/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5006
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera6_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    dewarper_framerate: 10
+    is_aligned: false
+    jetpack_version: "6.0"
+  camera7:
+    camera_id: 7
+    # src
+    device: "/dev/video7"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera7/camera_link"
+    camera_name: "test_camera7"
+    camera_info_url: "package://nvenc_multicam/config/camera_info_3mm.yaml"
+    camera_info_topic_name: "front/camera_info"
+    # output h264
+    pub_h264: true
+    h264_width: 1920
+    h264_height: 1080
+    h264_framerate: 10
+    h264_bitrate: 500000
+    # output h265
+    pub_h265: true
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_control_rate: 1                #0: variable bitrate, 1: constant bitrate   default 1
+    h265_bitrate: 500000
+    h265_peak_bitrate: 800000           #control_rate should be 0, and peak bitrate must be >= bitrate
+    h265_iframeinterval: 10             #keyframe interval, default 10, should be smaller when high speed motion or low framerate
+    h265_idrinterval: 10                #IDR interval, default 10, should be smaller when high speed motion or low framerate
+    h265_topic_name: "front/camera_image_h265"
+    # output jpeg
+    pub_jpeg: true
+    jpeg_topic_name: "front/camera_image_jpeg"
+    jpeg_width: 1080
+    jpeg_height: 720
+    jpeg_framerate: 30
+    jpeg_udp_ip: "192.168.1.104"
+    jpeg_udp_port: 5007
+    # output rgb
+    pub_rgb: true
+    dewarper_framerate: 10
+    rgb_topic_name: ""
+    rgb_nvunixfdsink_path_1: "/tmp/camera7_rgb_sink_1"
+    rgb_width: 1920
+    rgb_height: 1080
+    is_aligned: false
+    jetpack_version: "6.0"

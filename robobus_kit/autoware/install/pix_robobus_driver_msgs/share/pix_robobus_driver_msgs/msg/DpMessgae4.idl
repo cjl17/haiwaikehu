@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/DpMessgae4.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct DpMessgae4 {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[A] [0|255]")
+      int32 pdu_total_cur;
+
+      @verbatim (language="comment", text=
+        "[V] [0|127.5]")
+      float dp_lowbat_vol;
+
+      @verbatim (language="comment", text=
+        "[℃] [-40|215]")
+      int32 pd_temp;
+
+      @verbatim (language="comment", text=
+        "[A] [0|255]")
+      int32 auto_current1;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 dp_errorcode;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 on_sta;
+
+      @verbatim (language="comment", text=
+        "[A] [0|255]")
+      int32 auto_current2;
+    };
+  };
+};

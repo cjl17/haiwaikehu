@@ -1,0 +1,35 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/AcMessage2.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct AcMessage2 {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[℃] [-40|255]")
+      int32 fan_temp;
+
+      @verbatim (language="comment", text=
+        "[℃] [-40|255]")
+      int32 ac_out_temp;
+
+      @verbatim (language="comment", text=
+        "[℃] [-40|255]")
+      int32 ac_in_temp;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 ac_hardware;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 ac_software;
+    };
+  };
+};

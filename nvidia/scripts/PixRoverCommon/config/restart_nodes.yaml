@@ -1,0 +1,3 @@
+ORIN2:
+  - zenoh_router
+  - robobus_display

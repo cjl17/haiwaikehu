@@ -1,0 +1,41 @@
+[0.010s] Invoking command in '/home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --build /home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch -- -j32 -l32
+[0.115s] Invoked command in '/home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --build /home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch -- -j32 -l32
+[0.116s] Invoking command in '/home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --install /home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch
+[0.161s] -- Install configuration: ""
+[0.162s] -- Execute custom install script
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/camera.launch.xml
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/combined_navigation/nmea_gpsd_driver.launch.py
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/combined_navigation/nmea_udpclient_driver.launch.py
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/gnss.launch.xml
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/imu.launch.xml
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar.launch.xml
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_livox_component.launch.py
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_livox_muti.launch.py
+[0.162s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_robosense.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_robosense_component.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/millimeter_wave/millimeter_wave_ars408_front.launch.xml
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_livox.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_robosense-1.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_robosense.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/sensing.launch.xml
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasonic.launch.xml
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasound/ultra_sonic_radar_detector.launch.py
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasound/ultra_sonic_radar_driver.launch.xml
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/config/lidar_muti_livox.json
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/config/robosense_config.yaml
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/package_run_dependencies/robobus_sensor_kit_launch
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/parent_prefix_path/robobus_sensor_kit_launch
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/ament_prefix_path.sh
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/ament_prefix_path.dsv
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/path.sh
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/path.dsv
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.bash
+[0.163s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.sh
+[0.164s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.zsh
+[0.164s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.dsv
+[0.164s] -- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/package.dsv
+[0.165s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/packages/robobus_sensor_kit_launch
+[0.165s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/cmake/robobus_sensor_kit_launchConfig.cmake
+[0.165s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/cmake/robobus_sensor_kit_launchConfig-version.cmake
+[0.166s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/package.xml
+[0.184s] Invoked command in '/home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --install /home/ipc/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch

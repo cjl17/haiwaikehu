@@ -1,0 +1,12 @@
+<launch>
+    <arg name="scripts_root_path" />
+
+    <include file="$(find-pkg-share autoware_launch)/launch/planning_simulator.launch.xml" >
+        <arg name="map_path" value="$(env HOME)/pix/map/main"/>
+        <arg name="vehicle_model" value="robobus"/>
+        <arg name="sensor_model" value="robobus_sensor_kit"/>
+    </include>
+    
+    <!-- 模拟定位发出 -->
+    <executable cmd="$(var scripts_root_path)/sim_tf_pub_pose.py" output='own_log'/>
+</launch>

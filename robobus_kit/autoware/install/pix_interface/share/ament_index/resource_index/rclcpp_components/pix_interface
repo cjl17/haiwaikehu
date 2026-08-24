@@ -1,0 +1,2 @@
+pix_interface::control_converter::ControlConverter;lib/libpix_interface_control_converter_node.so
+pix_interface::report_converter::ReportConverter;lib/libpix_interface_report_converter_node.so

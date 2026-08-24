@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="vehicle_id" default="$(env VEHICLE_ID default)"/>
+  <!-- 容器方式 -->
+  <!-- <include file="$(find-pkg-share pix_robobus_driver)/launch/pix_robobus_driver_component.launch.py" />
+  <include file="$(find-pkg-share robobus_launch)/launch/ros2_socketcan/socket_can0_bridge_component.launch.py" />
+  <include file="$(find-pkg-share robobus_launch)/launch/ros2_socketcan/socket_can1_bridge_component.launch.py" />
+  <include file="$(find-pkg-share robobus_launch)/launch/raw_vehicle_cmd_converter/raw_vehicle_converter_component.launch.py" /> -->
+
+  <!-- 单进程方式 -->
+  <include file="$(find-pkg-share pix_robobus_driver)/launch/pix_robobus_driver.launch.xml" />
+  <include file="$(find-pkg-share robobus_launch)/launch/ros2_socketcan/socket_can0_bridge.launch.xml" />
+  <include file="$(find-pkg-share robobus_launch)/launch/ros2_socketcan/socket_can1_bridge.launch.xml" />
+  <include file="$(find-pkg-share robobus_launch)/launch/raw_vehicle_cmd_converter/raw_vehicle_converter.launch.xml" />
+</launch>

@@ -1,0 +1,146 @@
+// generated from rosidl_generator_cpp/resource/idl__traits.hpp.em
+// with input from pix_robobus_driver_msgs:msg/RemoteMessage.idl
+// generated code does not contain a copyright notice
+
+#ifndef PIX_ROBOBUS_DRIVER_MSGS__MSG__DETAIL__REMOTE_MESSAGE__TRAITS_HPP_
+#define PIX_ROBOBUS_DRIVER_MSGS__MSG__DETAIL__REMOTE_MESSAGE__TRAITS_HPP_
+
+#include <stdint.h>
+
+#include <sstream>
+#include <string>
+#include <type_traits>
+
+#include "pix_robobus_driver_msgs/msg/detail/remote_message__struct.hpp"
+#include "rosidl_runtime_cpp/traits.hpp"
+
+// Include directives for member types
+// Member 'header'
+#include "std_msgs/msg/detail/header__traits.hpp"
+
+namespace pix_robobus_driver_msgs
+{
+
+namespace msg
+{
+
+inline void to_flow_style_yaml(
+  const RemoteMessage & msg,
+  std::ostream & out)
+{
+  out << "{";
+  // member: header
+  {
+    out << "header: ";
+    to_flow_style_yaml(msg.header, out);
+    out << ", ";
+  }
+
+  // member: remote_drive_mode
+  {
+    out << "remote_drive_mode: ";
+    rosidl_generator_traits::value_to_yaml(msg.remote_drive_mode, out);
+    out << ", ";
+  }
+
+  // member: remote_heartbeat
+  {
+    out << "remote_heartbeat: ";
+    rosidl_generator_traits::value_to_yaml(msg.remote_heartbeat, out);
+  }
+  out << "}";
+}  // NOLINT(readability/fn_size)
+
+inline void to_block_style_yaml(
+  const RemoteMessage & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  // member: header
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "header:\n";
+    to_block_style_yaml(msg.header, out, indentation + 2);
+  }
+
+  // member: remote_drive_mode
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "remote_drive_mode: ";
+    rosidl_generator_traits::value_to_yaml(msg.remote_drive_mode, out);
+    out << "\n";
+  }
+
+  // member: remote_heartbeat
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "remote_heartbeat: ";
+    rosidl_generator_traits::value_to_yaml(msg.remote_heartbeat, out);
+    out << "\n";
+  }
+}  // NOLINT(readability/fn_size)
+
+inline std::string to_yaml(const RemoteMessage & msg, bool use_flow_style = false)
+{
+  std::ostringstream out;
+  if (use_flow_style) {
+    to_flow_style_yaml(msg, out);
+  } else {
+    to_block_style_yaml(msg, out);
+  }
+  return out.str();
+}
+
+}  // namespace msg
+
+}  // namespace pix_robobus_driver_msgs
+
+namespace rosidl_generator_traits
+{
+
+[[deprecated("use pix_robobus_driver_msgs::msg::to_block_style_yaml() instead")]]
+inline void to_yaml(
+  const pix_robobus_driver_msgs::msg::RemoteMessage & msg,
+  std::ostream & out, size_t indentation = 0)
+{
+  pix_robobus_driver_msgs::msg::to_block_style_yaml(msg, out, indentation);
+}
+
+[[deprecated("use pix_robobus_driver_msgs::msg::to_yaml() instead")]]
+inline std::string to_yaml(const pix_robobus_driver_msgs::msg::RemoteMessage & msg)
+{
+  return pix_robobus_driver_msgs::msg::to_yaml(msg);
+}
+
+template<>
+inline const char * data_type<pix_robobus_driver_msgs::msg::RemoteMessage>()
+{
+  return "pix_robobus_driver_msgs::msg::RemoteMessage";
+}
+
+template<>
+inline const char * name<pix_robobus_driver_msgs::msg::RemoteMessage>()
+{
+  return "pix_robobus_driver_msgs/msg/RemoteMessage";
+}
+
+template<>
+struct has_fixed_size<pix_robobus_driver_msgs::msg::RemoteMessage>
+  : std::integral_constant<bool, has_fixed_size<std_msgs::msg::Header>::value> {};
+
+template<>
+struct has_bounded_size<pix_robobus_driver_msgs::msg::RemoteMessage>
+  : std::integral_constant<bool, has_bounded_size<std_msgs::msg::Header>::value> {};
+
+template<>
+struct is_message<pix_robobus_driver_msgs::msg::RemoteMessage>
+  : std::true_type {};
+
+}  // namespace rosidl_generator_traits
+
+#endif  // PIX_ROBOBUS_DRIVER_MSGS__MSG__DETAIL__REMOTE_MESSAGE__TRAITS_HPP_

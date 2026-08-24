@@ -1,0 +1,3 @@
+source;share/pix_robobus_driver/environment/ament_prefix_path.sh
+source;share/pix_robobus_driver/environment/library_path.sh
+source;share/pix_robobus_driver/environment/path.sh

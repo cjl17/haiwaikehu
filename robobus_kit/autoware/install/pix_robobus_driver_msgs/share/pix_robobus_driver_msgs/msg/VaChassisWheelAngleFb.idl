@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaChassisWheelAngleFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaChassisWheelAngleFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[deg] [-90|90]")
+      float vcu_chassis_wheel_angle_lf;
+
+      @verbatim (language="comment", text=
+        "[deg] [-90|90]")
+      float vcu_chassis_wheel_angle_rf;
+
+      @verbatim (language="comment", text=
+        "[deg] [-90|90]")
+      float vcu_chassis_wheel_angle_lr;
+
+      @verbatim (language="comment", text=
+        "[deg] [-90|90]")
+      float vcu_chassis_wheel_angle_rr;
+    };
+  };
+};

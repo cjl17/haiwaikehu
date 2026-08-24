@@ -1,0 +1,60 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaSteerStaFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaSteerStaFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_steer_en_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_steer_slopover;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|2")
+      int32 vcu_chassis_steer_work_mode;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_chassis_steer_mode_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_steer_communication_lost;
+
+      @verbatim (language="comment", text=
+        "[deg] [-500|500]")
+      int32 vcu_chassis_steer_angle_fb;
+
+      @verbatim (language="comment", text=
+        "[deg] [-500|500]")
+      int32 vcu_chassis_steer_angle_rear_fb;
+
+      @verbatim (language="comment", text=
+        "[deg/s] [0|500]")
+      float vcu_chassis_steer_angle_speed_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|15")
+      int32 vcu_steer_life;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_steer_check_sta;
+    };
+  };
+};

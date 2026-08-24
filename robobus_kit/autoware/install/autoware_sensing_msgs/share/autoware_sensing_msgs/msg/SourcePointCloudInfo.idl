@@ -1,0 +1,45 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_sensing_msgs/msg/SourcePointCloudInfo.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module autoware_sensing_msgs {
+  module msg {
+    module SourcePointCloudInfo_Constants {
+      @verbatim (language="comment", text=
+        "Available status codes for source point cloud" "\n"        "Cloud received (may have 0 or more points)")
+      const uint8 STATUS_OK = 0;
+      @verbatim (language="comment", text=
+        "Cloud not received due to timeout")
+      const uint8 STATUS_TIMEOUT = 1;
+      @verbatim (language="comment", text=
+        "Cloud arrived but was malformed/corrupt")
+      const uint8 STATUS_INVALID = 2;
+    };
+    @verbatim (language="comment", text=
+      "This message holds metadata information about a source point cloud segment" "\n"
+      "within a concatenated point cloud, including its spatial boundaries and structural properties.")
+    struct SourcePointCloudInfo {
+      @verbatim (language="comment", text=
+        "Time of sensor data acquisition, and the coordinate frame ID (for 3d points).")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Source topic")
+      string topic;
+
+      @verbatim (language="comment", text=
+        "Status of the source point cloud")
+      uint8 status;
+
+      @verbatim (language="comment", text=
+        "The starting index (inclusive) of the point cloud segment within the concatenated point cloud")
+      uint32 idx_begin;
+
+      @verbatim (language="comment", text=
+        "The length of the point cloud segment in the concatenated point cloud")
+      uint32 length;
+    };
+  };
+};

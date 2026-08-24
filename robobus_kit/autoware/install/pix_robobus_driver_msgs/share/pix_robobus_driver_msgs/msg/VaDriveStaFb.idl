@@ -1,0 +1,65 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaDriveStaFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaDriveStaFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_driver_en_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_diver_slopover;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_chassis_driver_mode_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_chassis_gear_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|2")
+      int32 vcu_chassis4_wd_mode_fb;
+
+      @verbatim (language="comment", text=
+        "[m/s] [-50|50]")
+      float vcu_chassis_speed_fb;
+
+      @verbatim (language="comment", text=
+        "[%] [0|100]")
+      float vcu_chassis_throttle_pald_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_throttle_pedal_req_fb;
+
+      @verbatim (language="comment", text=
+        "[m/s2] [-20|20]")
+      float vcu_chassis_acceleration_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|15")
+      int32 vcu_drive_life;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_drive_check_sta;
+    };
+  };
+};

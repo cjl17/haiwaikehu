@@ -1,0 +1,17 @@
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/launch/vehicle.launch.xml
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/urdf/vehicle.xacro
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/package_run_dependencies/tier4_vehicle_launch
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/parent_prefix_path/tier4_vehicle_launch
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.sh
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.dsv
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.sh
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.dsv
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.bash
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.sh
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.zsh
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.dsv
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.dsv
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/packages/tier4_vehicle_launch
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig.cmake
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig-version.cmake
+/home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.xml

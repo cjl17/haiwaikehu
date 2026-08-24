@@ -1,0 +1,337 @@
+cameras:
+  camera0:
+    camera_id: 0
+    pub_h265: true
+    pub_jpeg: false
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video0"
+    width: 3840
+    height: 2160
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera0/camera_link"
+    camera_name: "camera0"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera0_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/front_3mm/camera_compressed_image"
+    h265_width: 3840
+    h265_height: 2160
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/front_3mm/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "front_3mm"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5001
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/front_3mm/camera_info"
+    rgb_topic_name: "/sensing/camera/front_3mm/image_raw"
+    rgb_width: 3840
+    rgb_height: 2160
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_front_3mm_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera1:
+    camera_id: 1
+    pub_h265: true
+    pub_jpeg: false
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video1"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera1/camera_link"
+    camera_name: "camera1"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera1_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/rear_3mm/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/rear_3mm/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "rear_3mm"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5002
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/rear_3mm/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_rear_3mm_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera2:
+    camera_id: 2
+    pub_h265: true
+    pub_jpeg: true
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video2"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera2/camera_link"
+    camera_name: "camera2"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera2_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/front_left/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/front_left/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "front_left"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5003
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/front_left/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_front_left_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera3:
+    camera_id: 3
+    pub_h265: true
+    pub_jpeg: true
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video3"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera3/camera_link"
+    camera_name: "camera3"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera3_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/front_right/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/front_right/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "front_right"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5004
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/front_right/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_front_right_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera4:
+    camera_id: 4
+    pub_h265: true
+    pub_jpeg: true
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video4"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera4/camera_link"
+    camera_name: "camera4"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera4_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/rear_left/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/rear_left/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "rear_left"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5005
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/rear_left/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_rear_left_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera5:
+    camera_id: 5
+    pub_h265: true
+    pub_jpeg: true
+    pub_rgb: true
+    is_aligned: true
+    # src
+    device: "/dev/video5"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera5/camera_link"
+    camera_name: "camera5"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera5_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/rear_right/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/rear_right/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "rear_right"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5006
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/rear_right/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_rear_right_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera6:
+    camera_id: 6
+    pub_h265: false
+    pub_jpeg: true
+    pub_rgb: false
+    is_aligned: true
+    # src
+    device: "/dev/video6"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera6/camera_link"
+    camera_name: "camera6"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera6_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/front_fisheye/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/front_fisheye/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "front"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5007
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/front_fisheye/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_front_rgba_sink_1"
+    jetpack_version: "6.2"
+  camera7:
+    camera_id: 7
+    pub_h265: false
+    pub_jpeg: true
+    pub_rgb: false
+    is_aligned: true
+    # src
+    device: "/dev/video7"
+    width: 1920
+    height: 1080
+    framerate: 30
+    format: "UYVY"
+    frame_id: "camera7/camera_link"
+    camera_name: "camera7"
+    camera_info_url: "file://${ROS_HOME}/../pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/camera7_params.yaml"
+    # output h265
+    h265_topic_name: "/electronic_rearview_mirror/rear_fisheye/camera_compressed_image"
+    h265_width: 1920
+    h265_height: 1080
+    h265_framerate: 10
+    h265_bitrate: 12000000
+    h265_control_rate: 1
+    h265_peak_bitrate: 5000000
+    h265_iframeinterval: 10
+    h265_idrinterval: 10
+    # output jpeg
+    jpeg_topic_name: "/electronic_rearview_mirror/rear_fisheye/camera_image_jpeg"
+    jpeg_width: 960
+    jpeg_height: 540
+    jpeg_framerate: 30
+    jpeg_file_prefix: "rear"
+    jpeg_udp_ip: "192.168.1.104" 
+    jpeg_udp_port: 5000
+    # output rgb
+    dewarper_framerate: 10
+    camera_info_topic_name: "/sensing/camera/rear_fisheye/camera_info"
+    rgb_topic_name: ""
+    rgb_width: 1920
+    rgb_height: 1080
+    rgb_framerate: 10
+    rgb_nvunixfdsink_path_1: "/tmp/camera_rear_rgba_sink_1"
+    jetpack_version: "6.2"

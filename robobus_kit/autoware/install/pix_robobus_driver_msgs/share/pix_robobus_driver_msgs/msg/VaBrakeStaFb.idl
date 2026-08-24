@@ -1,0 +1,66 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaBrakeStaFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaBrakeStaFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_brake_en_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_brake_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_chassis_epb_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_brake_communication_lost;
+
+      @verbatim (language="comment", text=
+        "[%] [0|100]")
+      float vcu_chassis_brake_padl_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_brake_pedal_req_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_aeb_en_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_aeb_trigger_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[bar] [0|100]")
+      int32 vcu_chassis_brake_pressure_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|15")
+      int32 vcu_brake_life;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_brake_check_sta;
+    };
+  };
+};

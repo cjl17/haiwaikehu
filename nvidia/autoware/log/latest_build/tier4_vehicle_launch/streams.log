@@ -1,0 +1,21 @@
+[0.025s] Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch
+[0.052s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.052s]   By not providing "Findautoware_cmake.cmake" in CMAKE_MODULE_PATH this
+[0.052s]   project has asked CMake to find a package configuration file provided by
+[0.052s]   "autoware_cmake", but CMake did not find one.
+[0.052s] 
+[0.052s]   Could not find a package configuration file provided by "autoware_cmake"
+[0.052s]   with any of the following names:
+[0.052s] 
+[0.052s]     autoware_cmakeConfig.cmake
+[0.052s]     autoware_cmake-config.cmake
+[0.053s] 
+[0.053s]   Add the installation prefix of "autoware_cmake" to CMAKE_PREFIX_PATH or set
+[0.053s]   "autoware_cmake_DIR" to a directory containing one of the above files.  If
+[0.053s]   "autoware_cmake" provides a separate development package or SDK, be sure it
+[0.053s]   has been installed.
+[0.053s] 
+[0.053s] [0m
+[0.053s] -- Configuring incomplete, errors occurred!
+[0.053s] See also "/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch/CMakeFiles/CMakeOutput.log".
+[0.055s] Invoked command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch

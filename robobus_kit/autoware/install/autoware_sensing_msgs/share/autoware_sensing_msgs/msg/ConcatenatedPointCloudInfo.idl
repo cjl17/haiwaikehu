@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from autoware_sensing_msgs/msg/ConcatenatedPointCloudInfo.msg
+// generated code does not contain a copyright notice
+
+#include "autoware_sensing_msgs/msg/SourcePointCloudInfo.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autoware_sensing_msgs {
+  module msg {
+    module ConcatenatedPointCloudInfo_Constants {
+      @verbatim (language="comment", text=
+        "Available matching strategies for source point clouds concatenation" "\n"        "Assigns the oldest stamp of the sensor that was concatenated")
+      const uint8 STRATEGY_NAIVE = 0;
+      @verbatim (language="comment", text=
+        "Assigns the oldest stamp of the sensor that was concatenated")
+      const uint8 STRATEGY_ADVANCED = 1;
+    };
+    @verbatim (language="comment", text=
+      "This message holds information about a concatenated point cloud that combines multiple source" "\n"
+      "point clouds, including the overall point cloud structure and metadata for each source segment.")
+    struct ConcatenatedPointCloudInfo {
+      @verbatim (language="comment", text=
+        "The concatenated point cloud header, where timestamp assignment depends on matching strategy")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "Whether concatenation was successful")
+      boolean concatenation_success;
+
+      @verbatim (language="comment", text=
+        "Strategy used for concatenation")
+      uint8 matching_strategy;
+
+      @verbatim (language="comment", text=
+        "Raw data of concatenation config, relevant to matching_strategy field.")
+      sequence<uint8> matching_strategy_config;
+
+      @verbatim (language="comment", text=
+        "Meta information of input point clouds")
+      sequence<autoware_sensing_msgs::msg::SourcePointCloudInfo> source_info;
+    };
+  };
+};

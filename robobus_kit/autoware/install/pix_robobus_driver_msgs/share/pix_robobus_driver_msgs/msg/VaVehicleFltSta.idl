@@ -1,0 +1,118 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaVehicleFltSta.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaVehicleFltSta {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_sys_motor_over_temp_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_sys_bms_over_temp_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_sys_brake_over_temp_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_sys_steer_over_temp_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_sys_under_volt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_brake_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_parking_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_steer_front_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_steer_back_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_motor_lf_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_motor_rf_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_motor_lr_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_motor_rr_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_bms_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_sys_dc_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_sys_door_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_sys_dpm_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_sys_bcm_flt;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_vehicle_flt_level;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|4")
+      int32 vcu_sys_flt_reserve1;
+    };
+  };
+};

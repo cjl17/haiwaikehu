@@ -1,0 +1,43 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaVcuSofver.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaVcuSofver {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_year;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_month;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_day;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_main;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_sub;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 version_patch;
+    };
+  };
+};

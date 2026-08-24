@@ -1,0 +1,2 @@
+pix_robobus_driver::control_command::ControlCommand;lib/libpix_robobus_driver_control_command.so
+pix_robobus_driver::report_parser::ReportParser;lib/libpix_robobus_driver_report_parser.so

@@ -1,0 +1,2 @@
+source;share/ultra_sonic_radar_driver/environment/ament_prefix_path.sh
+source;share/ultra_sonic_radar_driver/environment/path.sh

@@ -1,0 +1,46 @@
+diff --git a/perception/autoware_shape_estimation/CMakeLists.txt b/perception/autoware_shape_estimation/CMakeLists.txt
+index d7313111e..e0458bfbb 100644
+--- a/perception/autoware_shape_estimation/CMakeLists.txt
++++ b/perception/autoware_shape_estimation/CMakeLists.txt
+@@ -13,9 +13,9 @@ find_package(pcl_conversions REQUIRED)
+ find_package(OpenCV REQUIRED)
+ find_package(Eigen3 REQUIRED)
+ 
+-find_package(CUDA)
+-find_package(CUDNN)
+-find_package(TENSORRT)
++# find_package(CUDA)
++# find_package(CUDNN)
++# find_package(TENSORRT)
+ 
+ set(SHAPE_ESTIMATION_DEPENDENCIES
+   PCL
+diff --git a/perception/autoware_shape_estimation/package.xml b/perception/autoware_shape_estimation/package.xml
+index e83e2a332..2e032ae68 100644
+--- a/perception/autoware_shape_estimation/package.xml
++++ b/perception/autoware_shape_estimation/package.xml
+@@ -22,7 +22,7 @@
+   <depend>autoware_cuda_dependency_meta</depend>
+   <depend>autoware_cuda_utils</depend>
+   <depend>autoware_perception_msgs</depend>
+-  <depend>autoware_tensorrt_common</depend>
++  <!-- <depend>autoware_tensorrt_common</depend> -->
+   <depend>autoware_utils</depend>
+   <depend>eigen</depend>
+   <depend>libopencv-dev</depend>
+diff --git a/sensing/autoware_cuda_utils/CMakeLists.txt b/sensing/autoware_cuda_utils/CMakeLists.txt
+index f1113905b..083902194 100644
+--- a/sensing/autoware_cuda_utils/CMakeLists.txt
++++ b/sensing/autoware_cuda_utils/CMakeLists.txt
+@@ -4,7 +4,7 @@ project(autoware_cuda_utils)
+ find_package(autoware_cmake REQUIRED)
+ autoware_package()
+ 
+-find_package(CUDA)
++# find_package(CUDA)
+ 
+ if(NOT ${CUDA_FOUND})
+   message(WARNING "cuda is not found, so the autoware_cuda_utils package won't be built.")
+
+# cd ~/pix/robobus/autoware-robobus.dev-master/src/universe/autoware_universe
+# git apply /home/ipc/pix/Autonomous-Ops-Platform/scripts/PixRoverCommon/tools/das/autoware_universe.patch

@@ -1,0 +1,96 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaVehicleWorkStaFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaVehicleWorkStaFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_driving_mode_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_chassis_power_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|2")
+      int32 vcu_chassis_power_dc_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_remote_connecte_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_acu_connect_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_speed_limited_mode_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_chassis_power_limite_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|2")
+      int32 vcu_sys_eco_mode;
+
+      @verbatim (language="comment", text=
+        "[m/s] [0|50]")
+      float vcu_chassis_speed_limited_val_fb;
+
+      @verbatim (language="comment", text=
+        "[V] [0|25]")
+      float vcu_chassis_low_power_volt_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_chassis_e_stop_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_crash_front_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_crash_rear_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_crash_left_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_crash_right_sta;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|15")
+      int32 vcu_life;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 vcu_check_sum;
+    };
+  };
+};

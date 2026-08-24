@@ -1,0 +1,16 @@
+<launch>
+  <arg name="launch_driver" default="true"/>
+  <arg name="use_camera_perception_container" default="true"/>
+  <arg name="use_camera_container" default="false" description="launch camera container"/>
+  <arg name="camera_container_name" default="camera_container"/>
+
+  <group>
+    <push-ros-namespace namespace="camera"/>
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/camera_preprocessor.launch.py">
+      <arg name="use_multithread" value="true"/>
+      <arg name="use_camera_perception_container" value="$(var use_camera_perception_container)"/>
+      <arg name="use_camera_container" value="$(var use_camera_container)"/>
+      <arg name="container_name" value="$(var camera_container_name)"/>
+    </include>
+  </group>
+</launch>

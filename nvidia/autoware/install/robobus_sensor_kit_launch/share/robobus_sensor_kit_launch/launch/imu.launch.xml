@@ -1,0 +1,13 @@
+<launch>
+  <arg name="launch_driver" default="true"/>
+  <let name="imu_topic_name" value="/sensing/gnss/imu" />
+  <let name="imu_corrector_param_file" value="$(env HOME)/pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/imu_corrector.param.yaml"/>
+
+  <!-- 组合导航驱动设为开机启动，不管那个厂家组合导航硬件, 统一话题名称/sensing/gnss/xx -->
+  <!-- /sensing/gnss/imu -->
+  <group>
+    <push-ros-namespace namespace="imu"/>
+    
+
+  </group>
+</launch>

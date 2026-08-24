@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaChassisWheelTirePressFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaChassisWheelTirePressFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[bar] [0|20]")
+      float vcu_chassis_wheel_tire_press_lf;
+
+      @verbatim (language="comment", text=
+        "[bar] [0|20]")
+      float vcu_chassis_wheel_tire_press_rf;
+
+      @verbatim (language="comment", text=
+        "[bar] [0|20]")
+      float vcu_chassis_wheel_tire_press_lr;
+
+      @verbatim (language="comment", text=
+        "[bar] [0|20]")
+      float vcu_chassis_wheel_tire_press_rr;
+    };
+  };
+};

@@ -1,0 +1,16 @@
+<launch>
+  <arg name="launch_system" default="true" />
+  <arg name="launch_other" default="true" />
+  
+  <group if="$(var launch_system)">
+    <executable cmd="$(env SCRIPTS_ROOT)/PixRoverCommon/tools/system_check/system_check.py" output='own_log'/>
+  </group>
+  
+  <include file="$(find-pkg-share hmi_launch)/launch/hmi_launch.launch.py"/>
+
+  <!-- 
+  <group if="$(var launch_other)">
+    <include file="$(env SCRIPTS_ROOT)/launch/foxglove_bridge_launch.xml" />
+  </group> 
+  -->
+</launch>

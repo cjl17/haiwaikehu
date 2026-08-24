@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/AcuSysTime.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct AcuSysTime {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[Y] [0|153]")
+      int32 sys_time_year;
+
+      @verbatim (language="comment", text=
+        "[M] [0|18]")
+      int32 sys_time_month;
+
+      @verbatim (language="comment", text=
+        "[D] [0|49]")
+      int32 sys_time_day;
+
+      @verbatim (language="comment", text=
+        "[h] [0|36]")
+      int32 sys_time_hour;
+
+      @verbatim (language="comment", text=
+        "[m] [0|96]")
+      int32 sys_time_minute;
+
+      @verbatim (language="comment", text=
+        "[s] [0|96]")
+      int32 sys_time_second;
+    };
+  };
+};

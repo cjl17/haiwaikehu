@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="autoware_driver_period_ms" default="30" />
+  <arg name="autoware_gear_period_ms" default="100" />
+
+  <!-- 消息周期: 丢失3个周期警告级别，丢失5个周期严重级别 -->
+  <!-- report_converter订阅消息周期  -->
+  <arg name="pix_door_lamp_period_ms" default="200" />
+  <arg name="pix_estop_period_ms" default="50" />
+  <arg name="pix_drive_period_ms" default="20" />
+  <arg name="imu_msg_period_ms" default="10" />
+  
+   <!-- 目前，老转向机: DP139 ，新转向机: H02B  -->
+  <arg name="steer_mechanical_type" default="$(env STEER_MECHANICAL_TYPE H02B)" />
+  <arg name="max_steering_angle_DP139_rad" default="0.408" />
+  <log message="转向电机类型: $(var steer_mechanical_type)" />
+  <arg name="max_steering_angle_H02B_rad" default="0.419580" />
+  <arg name="max_steering_angle_DP139_deg" default="420.0" />
+  <arg name="max_steering_angle_H02B_deg" default="450.0" />
+  <arg name="loop_rate" default="50.0" />
+  <arg name="base_frame_id" default="base_link" />
+  <arg name="use_steer_mode_correct" default="true" />
+  <arg name="wheel_base" default="3.02" />
+  <arg name="k_threshold" default="0.1" />
+  <arg name="brake_lamp_lpf_alpha" default="0.2" />
+  <arg name="brake_lamp_raw_acc_on_thresh" default="-0.25" />
+  <arg name="brake_lamp_on_thresh" default="-0.20" />
+  <arg name="brake_lamp_off_thresh" default="-0.05" />
+  <arg name="brake_lamp_pedal_on_thresh" default="3.0" />
+  <arg name="brake_lamp_pedal_off_thresh" default="1.0" />
+  <arg name="brake_lamp_min_on_ms" default="200" />
+  <arg name="brake_lamp_off_delay_ms" default="150" />
+  <arg name="epb_hold_brake_pct" default="30.0" />
+  <arg name="epb_brake_apply_threshold" default="0.05" />
+  <arg name="epb_brake_release_threshold" default="0.02" />
+  <arg name="epb_start_velocity_threshold" default="0.10" />
+  <arg name="epb_stationary_speed_threshold" default="0.06" />
+  <arg name="epb_stationary_confirm_frames" default="5" />
+  <arg name="epb_park_trigger_frames" default="3" />
+  <arg name="epb_release_arm_frames" default="3" />
+  <arg name="epb_release_trigger_frames" default="3" />
+  <arg name="epb_reset_default_frames" default="3" />
+  <arg name="epb_intent_debounce_frames" default="5" />
+  <arg name="epb_park_timeout_ms" default="2000" />
+  <arg name="epb_drive_ready_timeout_ms" default="700" />
+  <arg name="epb_release_timeout_ms" default="1000" />
+  <arg name="epb_feedback_timeout_ms" default="500" />
+  <arg name="epb_drive_feedback_timeout_ms" default="500" />
+  <arg name="epb_mode_feedback_timeout_ms" default="500" />
+  <arg name="epb_reset_transition_timeout_ms" default="2000" />
+  <arg name="epb_parked_confirm_frames" default="3" />
+  <arg name="epb_released_confirm_frames" default="3" />
+  <arg name="epb_mode_sync_default_frames" default="3" />
+  <arg name="epb_max_retry" default="2" />
+  <!-- 纯自动长停保持：按坡度自适应抬服务制动，帮助底盘按自身逻辑自主驻车，不主动发EPB触发。 -->
+  <arg name="epb_chassis_auto_park_hold_enable" default="true" />
+  <arg name="epb_chassis_auto_park_hold_use_slope_table" default="true" />
+  <arg name="epb_chassis_auto_park_hold_min_brake_pct" default="30.0" />
+  <arg name="epb_chassis_auto_park_hold_invalid_slope_brake_pct" default="50.0" />
+  <arg name="epb_chassis_auto_park_hold_margin_pct" default="5.0" />
+  <arg name="epb_chassis_auto_park_hold_max_brake_pct" default="60.0" />
+  <arg name="epb_chassis_auto_park_hold_max_grade_pct" default="30.0" />
+  <arg name="epb_chassis_auto_park_hold_flat_grade_pct" default="2.0" />
+  <arg name="epb_chassis_auto_park_hold_start_frames" default="5" />
+  <arg name="epb_slope_angle_timeout_ms" default="500" />
+  <arg name="epb_slope_stop_hold_enable" default="true" />
+  <arg name="epb_slope_stop_hold_speed_threshold" default="0.20" />
+  <arg name="epb_slope_stop_hold_near_stop_frames" default="3" />
+  <arg name="epb_slope_stop_hold_latch_brake_pct" default="10.0" />
+  <arg name="epb_slope_stop_hold_release_brake_pct" default="5.0" />
+  <arg name="epb_slope_stop_hold_throttle_threshold" default="3.0" />
+  <arg name="epb_slope_stop_hold_min_hold_ms" default="1000" />
+  <arg name="epb_slope_stop_hold_recover_ratio" default="0.9" />
+
+  <node pkg="pix_interface" name="pix_interface_control_converter_node" exec="pix_interface_control_converter_node_exe" output="screen">
+    <param name="autoware_driver_period_ms" value="$(var autoware_driver_period_ms)"/>
+    <param name="autoware_gear_period_ms" value="$(var autoware_gear_period_ms)"/>
+    <param name="loop_rate" value="$(var loop_rate)"/>
+    <param name="steer_mechanical_type" value="$(var steer_mechanical_type)"/>
+    <param name="max_steering_angle_DP139_rad" value="$(var max_steering_angle_DP139_rad)"/>
+    <param name="max_steering_angle_H02B_rad" value="$(var max_steering_angle_H02B_rad)"/>
+    <param name="max_steering_angle_DP139_deg" value="$(var max_steering_angle_DP139_deg)"/>
+    <param name="max_steering_angle_H02B_deg" value="$(var max_steering_angle_H02B_deg)"/>
+    <param name="k_threshold" value="$(var k_threshold)"/>
+    <param name="brake_lamp_lpf_alpha" value="$(var brake_lamp_lpf_alpha)"/>
+    <param name="brake_lamp_raw_acc_on_thresh" value="$(var brake_lamp_raw_acc_on_thresh)"/>
+    <param name="brake_lamp_on_thresh" value="$(var brake_lamp_on_thresh)"/>
+    <param name="brake_lamp_off_thresh" value="$(var brake_lamp_off_thresh)"/>
+    <param name="brake_lamp_pedal_on_thresh" value="$(var brake_lamp_pedal_on_thresh)"/>
+    <param name="brake_lamp_pedal_off_thresh" value="$(var brake_lamp_pedal_off_thresh)"/>
+    <param name="brake_lamp_min_on_ms" value="$(var brake_lamp_min_on_ms)"/>
+    <param name="brake_lamp_off_delay_ms" value="$(var brake_lamp_off_delay_ms)"/>
+    <param name="epb_hold_brake_pct" value="$(var epb_hold_brake_pct)"/>
+    <param name="epb_brake_apply_threshold" value="$(var epb_brake_apply_threshold)"/>
+    <param name="epb_brake_release_threshold" value="$(var epb_brake_release_threshold)"/>
+    <param name="epb_start_velocity_threshold" value="$(var epb_start_velocity_threshold)"/>
+    <param name="epb_stationary_speed_threshold" value="$(var epb_stationary_speed_threshold)"/>
+    <param name="epb_stationary_confirm_frames" value="$(var epb_stationary_confirm_frames)"/>
+    <param name="epb_park_trigger_frames" value="$(var epb_park_trigger_frames)"/>
+    <param name="epb_release_arm_frames" value="$(var epb_release_arm_frames)"/>
+    <param name="epb_release_trigger_frames" value="$(var epb_release_trigger_frames)"/>
+    <param name="epb_reset_default_frames" value="$(var epb_reset_default_frames)"/>
+    <param name="epb_intent_debounce_frames" value="$(var epb_intent_debounce_frames)"/>
+    <param name="epb_park_timeout_ms" value="$(var epb_park_timeout_ms)"/>
+    <param name="epb_drive_ready_timeout_ms" value="$(var epb_drive_ready_timeout_ms)"/>
+    <param name="epb_release_timeout_ms" value="$(var epb_release_timeout_ms)"/>
+    <param name="epb_feedback_timeout_ms" value="$(var epb_feedback_timeout_ms)"/>
+    <param name="epb_drive_feedback_timeout_ms" value="$(var epb_drive_feedback_timeout_ms)"/>
+    <param name="epb_mode_feedback_timeout_ms" value="$(var epb_mode_feedback_timeout_ms)"/>
+    <param name="epb_reset_transition_timeout_ms" value="$(var epb_reset_transition_timeout_ms)"/>
+    <param name="epb_parked_confirm_frames" value="$(var epb_parked_confirm_frames)"/>
+    <param name="epb_released_confirm_frames" value="$(var epb_released_confirm_frames)"/>
+    <param name="epb_mode_sync_default_frames" value="$(var epb_mode_sync_default_frames)"/>
+    <param name="epb_max_retry" value="$(var epb_max_retry)"/>
+    <param name="epb_chassis_auto_park_hold_enable" value="$(var epb_chassis_auto_park_hold_enable)"/>
+    <param name="epb_chassis_auto_park_hold_use_slope_table" value="$(var epb_chassis_auto_park_hold_use_slope_table)"/>
+    <param name="epb_chassis_auto_park_hold_min_brake_pct" value="$(var epb_chassis_auto_park_hold_min_brake_pct)"/>
+    <param name="epb_chassis_auto_park_hold_invalid_slope_brake_pct" value="$(var epb_chassis_auto_park_hold_invalid_slope_brake_pct)"/>
+    <param name="epb_chassis_auto_park_hold_margin_pct" value="$(var epb_chassis_auto_park_hold_margin_pct)"/>
+    <param name="epb_chassis_auto_park_hold_max_brake_pct" value="$(var epb_chassis_auto_park_hold_max_brake_pct)"/>
+    <param name="epb_chassis_auto_park_hold_max_grade_pct" value="$(var epb_chassis_auto_park_hold_max_grade_pct)"/>
+    <param name="epb_chassis_auto_park_hold_flat_grade_pct" value="$(var epb_chassis_auto_park_hold_flat_grade_pct)"/>
+    <param name="epb_chassis_auto_park_hold_start_frames" value="$(var epb_chassis_auto_park_hold_start_frames)"/>
+    <param name="epb_slope_angle_timeout_ms" value="$(var epb_slope_angle_timeout_ms)"/>
+    <param name="epb_slope_stop_hold_enable" value="$(var epb_slope_stop_hold_enable)"/>
+    <param name="epb_slope_stop_hold_speed_threshold" value="$(var epb_slope_stop_hold_speed_threshold)"/>
+    <param name="epb_slope_stop_hold_near_stop_frames" value="$(var epb_slope_stop_hold_near_stop_frames)"/>
+    <param name="epb_slope_stop_hold_latch_brake_pct" value="$(var epb_slope_stop_hold_latch_brake_pct)"/>
+    <param name="epb_slope_stop_hold_release_brake_pct" value="$(var epb_slope_stop_hold_release_brake_pct)"/>
+    <param name="epb_slope_stop_hold_throttle_threshold" value="$(var epb_slope_stop_hold_throttle_threshold)"/>
+    <param name="epb_slope_stop_hold_min_hold_ms" value="$(var epb_slope_stop_hold_min_hold_ms)"/>
+    <param name="epb_slope_stop_hold_recover_ratio" value="$(var epb_slope_stop_hold_recover_ratio)"/>
+  </node>
+  <node pkg="pix_interface" name="pix_interface_report_converter_node" exec="pix_interface_report_converter_node_exe" output="screen">
+    <param name="base_frame_id" value="$(var base_frame_id)"/>
+    <param name="pix_door_lamp_period_ms" value="$(var pix_door_lamp_period_ms)"/>
+    <param name="pix_estop_period_ms" value="$(var pix_estop_period_ms)"/>
+    <param name="pix_drive_period_ms" value="$(var pix_drive_period_ms)"/>
+    <param name="loop_rate" value="$(var loop_rate)"/>
+    <param name="steer_mechanical_type" value="$(var steer_mechanical_type)"/>
+    <param name="max_steering_angle_DP139_rad" value="$(var max_steering_angle_DP139_rad)"/>
+    <param name="max_steering_angle_H02B_rad" value="$(var max_steering_angle_H02B_rad)"/>
+    <param name="max_steering_angle_DP139_deg" value="$(var max_steering_angle_DP139_deg)"/>
+    <param name="max_steering_angle_H02B_deg" value="$(var max_steering_angle_H02B_deg)"/>
+    <param name="use_steer_mode_correct" value="$(var use_steer_mode_correct)"/>
+    <param name="wheel_base" value="$(var wheel_base)"/>
+  </node>
+
+</launch>

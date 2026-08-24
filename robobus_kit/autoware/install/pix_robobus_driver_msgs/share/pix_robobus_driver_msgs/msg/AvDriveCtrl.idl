@@ -1,0 +1,51 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/AvDriveCtrl.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct AvDriveCtrl {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean acu_chassis_driver_en_ctrl;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 acu_chassis_driver_mode_ctrl;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 acu_chassis_gear_ctrl;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|2")
+      int32 acu_chassis4_wd_mode_ctrl;
+
+      @verbatim (language="comment", text=
+        "[m/s] [0|50]")
+      float acu_chassis_speed_ctrl;
+
+      @verbatim (language="comment", text=
+        "[%] [0|100]")
+      float acu_chassis_throttle_pdl_target;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|15")
+      int32 acu_drive_life_sig;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|255")
+      int32 acu_check_sum130;
+    };
+  };
+};

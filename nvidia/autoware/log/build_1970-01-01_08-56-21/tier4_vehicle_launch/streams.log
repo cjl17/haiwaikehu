@@ -1,0 +1,33 @@
+[0.025s] Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch
+[0.137s] -- The C compiler identification is GNU 11.4.0
+[0.255s] -- The CXX compiler identification is GNU 11.4.0
+[0.274s] -- Detecting C compiler ABI info
+[0.389s] -- Detecting C compiler ABI info - done
+[0.414s] -- Check for working C compiler: /usr/lib/ccache/gcc - skipped
+[0.415s] -- Detecting C compile features
+[0.416s] -- Detecting C compile features - done
+[0.425s] -- Detecting CXX compiler ABI info
+[0.551s] -- Detecting CXX compiler ABI info - done
+[0.577s] -- Check for working CXX compiler: /usr/lib/ccache/g++ - skipped
+[0.578s] -- Detecting CXX compile features
+[0.579s] -- Detecting CXX compile features - done
+[0.617s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[0.618s]   By not providing "Findautoware_cmake.cmake" in CMAKE_MODULE_PATH this
+[0.618s]   project has asked CMake to find a package configuration file provided by
+[0.618s]   "autoware_cmake", but CMake did not find one.
+[0.618s] 
+[0.618s]   Could not find a package configuration file provided by "autoware_cmake"
+[0.618s]   with any of the following names:
+[0.618s] 
+[0.618s]     autoware_cmakeConfig.cmake
+[0.619s]     autoware_cmake-config.cmake
+[0.619s] 
+[0.619s]   Add the installation prefix of "autoware_cmake" to CMAKE_PREFIX_PATH or set
+[0.619s]   "autoware_cmake_DIR" to a directory containing one of the above files.  If
+[0.619s]   "autoware_cmake" provides a separate development package or SDK, be sure it
+[0.619s]   has been installed.
+[0.619s] 
+[0.619s] -- Configuring incomplete, errors occurred!
+[0.619s] See also "/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch/CMakeFiles/CMakeOutput.log".
+[0.620s] [0m
+[0.624s] Invoked command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch

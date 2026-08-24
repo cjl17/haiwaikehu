@@ -1,0 +1,26 @@
+[0.009s] Invoking command in '/home/ipc/pix/robobus_kit/autoware/build/sensor_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --build /home/ipc/pix/robobus_kit/autoware/build/sensor_launch -- -j32 -l32
+[0.064s] Invoked command in '/home/ipc/pix/robobus_kit/autoware/build/sensor_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --build /home/ipc/pix/robobus_kit/autoware/build/sensor_launch -- -j32 -l32
+[0.110s] Invoking command in '/home/ipc/pix/robobus_kit/autoware/build/sensor_launch': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --install /home/ipc/pix/robobus_kit/autoware/build/sensor_launch
+[0.155s] -- Install configuration: ""
+[0.155s] -- Execute custom install script
+[0.155s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/launch/continental_ars408_socket_can.launch.xml
+[0.155s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/launch/sensor_launch.xml
+[0.155s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/launch/sensor_launch1.xml
+[0.155s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/launch/socket_can_bridge.launch.xml
+[0.155s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/launch/ultra_sonic_radar_driver.launch.xml
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/ament_index/resource_index/package_run_dependencies/sensor_launch
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/ament_index/resource_index/parent_prefix_path/sensor_launch
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/environment/ament_prefix_path.sh
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/environment/ament_prefix_path.dsv
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/environment/path.sh
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/environment/path.dsv
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/local_setup.bash
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/local_setup.sh
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/local_setup.zsh
+[0.156s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/local_setup.dsv
+[0.156s] -- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/package.dsv
+[0.158s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/ament_index/resource_index/packages/sensor_launch
+[0.158s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/cmake/sensor_launchConfig.cmake
+[0.158s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/cmake/sensor_launchConfig-version.cmake
+[0.158s] -- Up-to-date symlink: /home/ipc/pix/robobus_kit/autoware/install/sensor_launch/share/sensor_launch/package.xml
+[0.160s] Invoked command in '/home/ipc/pix/robobus_kit/autoware/build/sensor_launch' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ipc/pix/robobus_kit/autoware/install/nmea_navsat_driver:/opt/ros/humble HISTTIMEFORMAT=%F %T /home/ipc/.local/bin/cmake --install /home/ipc/pix/robobus_kit/autoware/build/sensor_launch

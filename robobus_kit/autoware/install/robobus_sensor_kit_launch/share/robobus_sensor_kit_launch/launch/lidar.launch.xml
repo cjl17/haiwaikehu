@@ -1,0 +1,40 @@
+<launch>
+  <arg name="launch_driver" default="true"/>
+  <arg name="lidar_type" default="$(env LIDAR_TYPE)"/>
+  <arg name="use_concat_filter" default="true"/>
+  <arg name="vehicle_id" default="$(env VEHICLE_ID default)"/>
+  <arg name="vehicle_mirror_param_file" default="$(find-pkg-share sample_vehicle_description)/config/mirror.param.yaml"/>
+  <arg name="use_pointcloud_container" default="false" description="launch pointcloud container"/>
+  <arg name="pointcloud_container_name" default="pointcloud_container"/>
+
+  <group if="$(eval &quot;'$(var lidar_type)'=='robosense'&quot;)">
+    <push-ros-namespace namespace="lidar"/>
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/lidar/lidar_robosense_component.launch.py" />
+
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/pointcloud_preprocessor_robosense.launch.py">
+      <arg name="base_frame" value="base_link"/>
+      <arg name="use_intra_process" value="true"/>
+      <arg name="use_multithread" value="true"/>
+      <arg name="use_concat_filter" value="$(var use_concat_filter)"/>
+      <arg name="use_pointcloud_container" value="$(var use_pointcloud_container)"/>
+      <arg name="container_name" value="$(var pointcloud_container_name)"/>
+    </include>
+  </group>
+
+  <group if="$(eval &quot;'$(var lidar_type)'=='livox'&quot;)">
+    <push-ros-namespace namespace="lidar"/>
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/lidar/lidar_livox_component.launch.py">
+      <arg name="use_multithread" value="true"/>
+    </include>
+
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/pointcloud_preprocessor_livox.launch.py">
+      <arg name="base_frame" value="base_link"/>
+      <arg name="use_intra_process" value="true"/>
+      <arg name="use_multithread" value="true"/>
+      <arg name="use_concat_filter" value="$(var use_concat_filter)"/>
+      <arg name="use_pointcloud_container" value="$(var use_pointcloud_container)"/>
+      <arg name="container_name" value="$(var pointcloud_container_name)"/>
+    </include>
+  </group>
+
+</launch>

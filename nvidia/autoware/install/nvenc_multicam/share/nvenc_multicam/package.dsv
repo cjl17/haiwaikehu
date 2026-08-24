@@ -1,0 +1,11 @@
+source;share/nvenc_multicam/hook/cmake_prefix_path.ps1
+source;share/nvenc_multicam/hook/cmake_prefix_path.dsv
+source;share/nvenc_multicam/hook/cmake_prefix_path.sh
+source;share/nvenc_multicam/hook/ld_library_path_lib.ps1
+source;share/nvenc_multicam/hook/ld_library_path_lib.dsv
+source;share/nvenc_multicam/hook/ld_library_path_lib.sh
+source;share/nvenc_multicam/local_setup.bash
+source;share/nvenc_multicam/local_setup.dsv
+source;share/nvenc_multicam/local_setup.ps1
+source;share/nvenc_multicam/local_setup.sh
+source;share/nvenc_multicam/local_setup.zsh

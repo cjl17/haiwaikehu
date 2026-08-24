@@ -1,0 +1,14 @@
+<launch>
+  <arg name="launch_driver" default="true"/>
+
+  <group>
+    <push-ros-namespace namespace="ultrasonic"/>
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/ultrasound/ultra_sonic_radar_detector.launch.py"/>
+
+    <group>
+      <push-ros-namespace namespace="encircled"/>
+      <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/ultrasound/ultra_sonic_radar_driver.launch.xml"/>
+    </group>
+    
+  </group>
+</launch>

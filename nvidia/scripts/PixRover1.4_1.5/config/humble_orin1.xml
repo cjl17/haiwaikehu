@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CycloneDDS xmlns="https://cdds.io/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd">
+<Domain id="any">
+  <General>
+    <Interfaces>
+      <NetworkInterface name='eno1' address="192.168.1.102" priority="3" multicast="true" />
+    </Interfaces>
+    <AllowMulticast>default</AllowMulticast>
+    <MaxMessageSize>65500B</MaxMessageSize>
+  </General>
+
+  <Discovery>
+    <Peers>
+      <Peer address="192.168.1.103"/>
+    </Peers>
+    <ParticipantIndex>auto</ParticipantIndex>
+    <MaxAutoParticipantIndex>200</MaxAutoParticipantIndex>
+  </Discovery>
+
+  <Internal>
+    <SocketReceiveBufferSize min="10MB"/>
+    <Watermarks>
+      <WhcHigh>500kB</WhcHigh>
+    </Watermarks>
+  </Internal>
+
+  <!-- 调试使用，确定多机级通讯信息 平时注释 -->
+  <!-- <Tracing>
+    <Verbosity>fine</Verbosity>
+    <OutputFile>cdds.log.${CYCLONEDDS_PID}</OutputFile>
+  </Tracing> -->
+
+</Domain>
+</CycloneDDS>

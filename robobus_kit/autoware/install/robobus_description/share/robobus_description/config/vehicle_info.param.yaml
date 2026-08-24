@@ -1,0 +1,17 @@
+/**:
+  ros__parameters:
+    wheel_radius: 0.323
+    wheel_width: 0.25
+    wheel_base: 3.02 # between front wheel center and rear wheel center
+    wheel_tread: 1.61 # between left wheel center and right wheel center
+    front_overhang: 0.4 # between front wheel center and vehicle front
+    rear_overhang: 0.4 # between rear wheel center and vehicle rear 
+    left_overhang: 0.15 # between left wheel center and vehicle left
+    right_overhang: 0.15 # between right wheel center and vehicle right
+    vehicle_height: 2.209
+    min_height_offset: -2.4 
+    max_height_offset: 0.036
+    max_steer_angle: 0.506 # in radians
+    to_4ws_k_threshold: 0.09 # curvature threshold to decide steer mode. if k > to_4ws_k_threshold, use 4ws, else use 2ws
+    to_2ws_k_threshold: 0.01 # curvature threshold to decide steer mode. if k < to_2ws_k_threshold, use 2ws, else use 4ws
+    coef_for_4ws: 0.5 # coefficient for 4ws steering angle calculation

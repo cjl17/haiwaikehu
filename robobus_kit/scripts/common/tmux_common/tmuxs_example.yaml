@@ -1,0 +1,33 @@
+
+ORIN1:  # 域控1 也是会话名称
+  passworld: nvidia
+  ManuRun:  # 开机后在通过nicegui执行列表
+    - autoware_robobus_orin1
+    - yolox_tiny
+    - key_data_recorder
+  BootupRun:  # 开机自启项列表
+    - script_executor
+
+ORIN2: # 域控2 也是会话名称
+  passworld: nvidia
+  ManuRun:
+    - autoware_robobus_orin2
+  BootupRun:  
+    - script_executor
+    - camera_run
+    - robobus_display
+
+IPC:  # 赛恩工控机 也是会话名称 
+  passworld: Pix@2019cc
+  ManuRun:  
+    - autoware_robobus_ipc
+  BootupRun:  
+    - script_executor
+    - remote_packages_ipc
+    - voice_alert_system
+    - pixmoving_hmi
+    - remote_control
+    - record
+
+
+    

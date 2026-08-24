@@ -1,0 +1,2 @@
+zenoh_router: PixRoverCommon/zenoh_bridge/zenoh_router.sh
+robobus_display: PixRoverCommon/scripts/robobus_display.sh

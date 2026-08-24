@@ -1,0 +1,27 @@
+-- Found autoware_cmake: 1.0.2 (/home/ipc/pix/robobus_kit/autoware/install/autoware_cmake/share/autoware_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ipc/pix/robobus_kit/autoware/build/tier4_vehicle_launch
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/launch/vehicle.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/urdf/vehicle.xacro
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/package_run_dependencies/tier4_vehicle_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/parent_prefix_path/tier4_vehicle_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/environment/path.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.bash
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.zsh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/local_setup.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/ament_index/resource_index/packages/tier4_vehicle_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig.cmake
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/cmake/tier4_vehicle_launchConfig-version.cmake
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.xml

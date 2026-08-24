@@ -1,0 +1,37 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/camera.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/combined_navigation/nmea_gpsd_driver.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/combined_navigation/nmea_udpclient_driver.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/gnss.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/imu.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_livox_component.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_livox_muti.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_robosense.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/lidar/lidar_robosense_component.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/millimeter_wave/millimeter_wave_ars408_front.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_livox.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_robosense-1.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/pointcloud_preprocessor_robosense.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/sensing.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasonic.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasound/ultra_sonic_radar_detector.launch.py
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/launch/ultrasound/ultra_sonic_radar_driver.launch.xml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/config/lidar_muti_livox.json
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/config/robosense_config.yaml
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/package_run_dependencies/robobus_sensor_kit_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/parent_prefix_path/robobus_sensor_kit_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/ament_prefix_path.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/path.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/environment/path.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.bash
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.sh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.zsh
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/local_setup.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/package.dsv
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/ament_index/resource_index/packages/robobus_sensor_kit_launch
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/cmake/robobus_sensor_kit_launchConfig.cmake
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/cmake/robobus_sensor_kit_launchConfig-version.cmake
+-- Symlinking: /home/ipc/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch/share/robobus_sensor_kit_launch/package.xml

@@ -1,0 +1,6 @@
+[0.027s] Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/robobus_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/nvidia/pix/robobus_kit/autoware/build/robobus_launch -- -j12 -l12
+[0.057s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.249s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.390s] -- Configuring done
+[0.401s] -- Generating done
+[0.407s] -- Build files have been written to: /home/nvidia/pix/robobus_kit/autoware/build/robobus_launch

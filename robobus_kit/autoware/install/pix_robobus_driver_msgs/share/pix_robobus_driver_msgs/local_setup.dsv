@@ -1,0 +1,4 @@
+source;share/pix_robobus_driver_msgs/environment/ament_prefix_path.sh
+source;share/pix_robobus_driver_msgs/environment/library_path.sh
+source;share/pix_robobus_driver_msgs/environment/path.sh
+source;share/pix_robobus_driver_msgs/environment/pythonpath.sh

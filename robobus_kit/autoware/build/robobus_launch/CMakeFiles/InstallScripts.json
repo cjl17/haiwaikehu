@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ipc/pix/robobus_kit/autoware/build/robobus_launch/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

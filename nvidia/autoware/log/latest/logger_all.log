@@ -1,0 +1,269 @@
+[0.163s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-select', 'robobus_launch', 'robobus_sensor_kit_launch', 'sensor_launch', 'tier4_vehicle_launch']
+[0.163s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['robobus_launch', 'robobus_sensor_kit_launch', 'sensor_launch', 'tier4_vehicle_launch'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb250c3a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb24e3eb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb24e3eb0>>, mixin_verb=('build',))
+[0.456s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.457s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.457s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nvidia/pix/robobus_kit/autoware'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'ros'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['cmake', 'python']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'cmake'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'python'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extensions ['python_setup_py']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch) by extension 'python_setup_py'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_description) by extension 'ros'
+[0.500s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robobus_launch/robobus_description' with type 'ros.ament_cmake' and name 'robobus_description'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extension 'ignore'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extension 'ignore_ament_install'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extensions ['colcon_pkg']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extension 'colcon_pkg'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extensions ['colcon_meta']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extension 'colcon_meta'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extensions ['ros']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_launch/robobus_launch) by extension 'ros'
+[0.501s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robobus_launch/robobus_launch' with type 'ros.ament_cmake' and name 'robobus_launch'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'ignore_ament_install'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['colcon_pkg']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'colcon_pkg'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['colcon_meta']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'colcon_meta'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['ros']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'ros'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['cmake', 'python']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'cmake'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'python'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extensions ['python_setup_py']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch) by extension 'python_setup_py'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ros'
+[0.504s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robobus_sensor_kit_launch/robobus_sensor_kit_description' with type 'ros.ament_cmake' and name 'robobus_sensor_kit_description'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ignore'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ignore_ament_install'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['colcon_pkg']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'colcon_pkg'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['ros']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ros'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['cmake', 'python']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'cmake'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'python'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['python_setup_py']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'python_setup_py'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['ignore', 'ignore_ament_install']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ignore'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ignore_ament_install'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['colcon_pkg']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'colcon_pkg'
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['colcon_meta']
+[0.505s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'colcon_meta'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extensions ['ros']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description) by extension 'ros'
+[0.506s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description' with type 'ros.ament_cmake' and name 'robobus_sensor_kit_description'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ignore_ament_install'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['colcon_pkg']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'colcon_pkg'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['colcon_meta']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'colcon_meta'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extensions ['ros']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch) by extension 'ros'
+[0.508s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch' with type 'ros.ament_cmake' and name 'robobus_sensor_kit_launch'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extension 'ignore'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extension 'ignore_ament_install'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extensions ['colcon_pkg']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extension 'colcon_pkg'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extensions ['colcon_meta']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extension 'colcon_meta'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extensions ['ros']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/sensor_launch) by extension 'ros'
+[0.509s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sensor_launch' with type 'ros.ament_cmake' and name 'sensor_launch'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/tier4_vehicle_launch) by extension 'ros'
+[0.511s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tier4_vehicle_launch' with type 'ros.ament_cmake' and name 'tier4_vehicle_launch'
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.538s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robobus_description' in 'src/robobus_launch/robobus_description'
+[0.538s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robobus_sensor_kit_description' in 'src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_description'
+[0.538s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'robobus_sensor_kit_description' in 'src/robobus_sensor_kit_launch/robobus_sensor_kit_description'
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.539s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.544s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 356 installed packages in /opt/ros/humble
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_target' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'robobus_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.606s] DEBUG:colcon.colcon_core.verb:Building package 'robobus_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/pix/robobus_kit/autoware/build/robobus_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/pix/robobus_kit/autoware/install/robobus_launch', 'merge_install': False, 'path': '/home/nvidia/pix/robobus_kit/autoware/src/robobus_launch/robobus_launch', 'symlink_install': True, 'test_result_base': None}
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_target' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.607s] Level 5:colcon.colcon_core.verb:set package 'robobus_sensor_kit_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.607s] DEBUG:colcon.colcon_core.verb:Building package 'robobus_sensor_kit_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/pix/robobus_kit/autoware/install/robobus_sensor_kit_launch', 'merge_install': False, 'path': '/home/nvidia/pix/robobus_kit/autoware/src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch', 'symlink_install': True, 'test_result_base': None}
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_target' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'sensor_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.608s] DEBUG:colcon.colcon_core.verb:Building package 'sensor_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/pix/robobus_kit/autoware/build/sensor_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/pix/robobus_kit/autoware/install/sensor_launch', 'merge_install': False, 'path': '/home/nvidia/pix/robobus_kit/autoware/src/sensor_launch', 'symlink_install': True, 'test_result_base': None}
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_args' from command line to 'None'
+[0.608s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_target' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_clean_first' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'cmake_force_configure' from command line to 'False'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'ament_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[0.609s] Level 5:colcon.colcon_core.verb:set package 'tier4_vehicle_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.609s] DEBUG:colcon.colcon_core.verb:Building package 'tier4_vehicle_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch', 'merge_install': False, 'path': '/home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch', 'symlink_install': True, 'test_result_base': None}
+[0.609s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.611s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.611s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/pix/robobus_kit/autoware/src/robobus_launch/robobus_launch' with build type 'ament_cmake'
+[0.611s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/pix/robobus_kit/autoware/src/robobus_launch/robobus_launch'
+[0.614s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.619s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/pix/robobus_kit/autoware/src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch' with build type 'ament_cmake'
+[0.619s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/pix/robobus_kit/autoware/src/robobus_sensor_kit_launch/robobus_sensor_kit_launch/robobus_sensor_kit_launch'
+[0.620s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.624s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/pix/robobus_kit/autoware/src/sensor_launch' with build type 'ament_cmake'
+[0.624s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/pix/robobus_kit/autoware/src/sensor_launch'
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.628s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch' with build type 'ament_cmake'
+[0.628s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch'
+[0.628s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.628s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/robobus_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/nvidia/pix/robobus_kit/autoware/build/robobus_launch -- -j12 -l12
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/nvidia/pix/robobus_kit/autoware/build/robobus_sensor_kit_launch -- -j12 -l12
+[0.648s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/sensor_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake --build /home/nvidia/pix/robobus_kit/autoware/build/sensor_launch -- -j12 -l12
+[0.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nvidia/pix/robobus_kit/autoware/build/tier4_vehicle_launch' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble HISTTIMEFORMAT=%F %T /usr/bin/cmake /home/nvidia/pix/robobus_kit/autoware/src/tier4_vehicle_launch -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch
+[0.702s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tier4_vehicle_launch)
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch' for CMake module files
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch' for CMake config files
+[0.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('tier4_vehicle_launch', 'cmake_prefix_path')
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/hook/cmake_prefix_path.ps1'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/hook/cmake_prefix_path.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/hook/cmake_prefix_path.sh'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/bin'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/lib/pkgconfig/tier4_vehicle_launch.pc'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/lib/python3.10/site-packages'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/bin'
+[0.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.ps1'
+[0.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.sh'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/tier4_vehicle_launch/package.zsh'
+[0.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nvidia/pix/robobus_kit/autoware/install/tier4_vehicle_launch/share/colcon-core/packages/tier4_vehicle_launch)
+[1.095s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.096s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.096s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[1.097s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.114s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.114s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.114s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.142s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.143s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/pix/robobus_kit/autoware/install/local_setup.ps1'
+[1.146s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/pix/robobus_kit/autoware/install/_local_setup_util_ps1.py'
+[1.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/pix/robobus_kit/autoware/install/setup.ps1'
+[1.155s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/pix/robobus_kit/autoware/install/local_setup.sh'
+[1.157s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nvidia/pix/robobus_kit/autoware/install/_local_setup_util_sh.py'
+[1.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/pix/robobus_kit/autoware/install/setup.sh'
+[1.163s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/pix/robobus_kit/autoware/install/local_setup.bash'
+[1.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/pix/robobus_kit/autoware/install/setup.bash'
+[1.168s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nvidia/pix/robobus_kit/autoware/install/local_setup.zsh'
+[1.170s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nvidia/pix/robobus_kit/autoware/install/setup.zsh'

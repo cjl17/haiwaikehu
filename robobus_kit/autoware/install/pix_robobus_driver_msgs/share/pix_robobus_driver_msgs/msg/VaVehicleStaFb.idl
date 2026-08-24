@@ -1,0 +1,112 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pix_robobus_driver_msgs/msg/VaVehicleStaFb.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module pix_robobus_driver_msgs {
+  module msg {
+    struct VaVehicleStaFb {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_pos_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_head_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_left_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_right_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_high_beam_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_fog_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_hazard_war_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_body_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|1")
+      boolean vcu_vehicle_read_lamp_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|6")
+      int32 acu_vehicle_window_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|6")
+      int32 vcu_vehicle_door_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_wipers_sta_fb;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt1;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt2;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt3;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt4;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt5;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|3")
+      int32 vcu_vehicle_safety_belt6;
+
+      @verbatim (language="comment", text=
+        "[]")
+      @unit (value="0|65535")
+      int32 vcu_vehicle_reserve_warning;
+
+      @verbatim (language="comment", text=
+        "[Km/h] [0|240]")
+      int32 vcu_vehicle_display_speed;
+    };
+  };
+};

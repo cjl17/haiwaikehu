@@ -1,0 +1,38 @@
+<launch>
+
+  <arg name="gnss_receiver" default="chc" description="chc:华测组合导航, eaora:优控组合导航"/>
+  
+  <!-- description="0:UTM, 1:MGRS, 2:PLANE" -->
+  <let name="gnss_coordinate_system" value="4" />
+  <let name="gnss_fix_topic_name" value="/sensing/gnss/fix" />
+  <let name="gnss_orientation_topic_name" value="/autoware_orientation"/>
+
+  <let name="imu_topic_name" value="/sensing/gnss/imu" />
+  <let name="imu_corrector_param_file" value="$(env HOME)/pix/parameter/sensor_kit/robobus_sensor_kit_description/intrinsic_parameters/imu_corrector.param.yaml"/>
+
+  <!-- 华测组合导航 UDP (nmea_navsat_driver) -->
+  <group if="$(eval &quot;'$(var gnss_receiver)'=='chc'&quot;)">
+    <push-ros-namespace namespace="/sensing/gnss"/>
+    <include file="$(env SCRIPTS_ROOT)/launch/combined_navigation/nmea_udpclient_driver.launch.py" />
+  </group>
+
+  <!-- pbox组合导航 TCP (nmea_navsat_driver) -->
+  <group if="$(eval &quot;'$(var gnss_receiver)'=='pbox'&quot;)">
+    <push-ros-namespace namespace="/sensing/gnss"/>
+    <include file="$(env SCRIPTS_ROOT)/launch/combined_navigation/nmea_pbox_driver.launch.py" />
+  </group>
+
+  <!-- 优控组合导航 UDP (nmea_navsat_driver) -->
+  <group if="$(eval &quot;'$(var gnss_receiver)'=='eaora'&quot;)">
+    <push-ros-namespace namespace="/sensing/gnss"/>
+    <include file="$(env SCRIPTS_ROOT)/launch/combined_navigation/nmea_eaor_driver.launch.py" />
+  </group>
+
+  <!-- 组合导航数据解析节点 -->
+  <group>
+    <push-ros-namespace namespace="/sensing"/>
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/gnss.launch.xml" />
+    <include file="$(find-pkg-share robobus_sensor_kit_launch)/launch/imu.launch.xml" />
+  </group>
+
+</launch>

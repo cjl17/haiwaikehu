@@ -1,0 +1,49 @@
+cameras:
+  camera0:
+    camera_position: front_3mm
+    device: /dev/video0
+    width: 3840
+    height: 2160
+    remote_port: 5001
+  camera1:
+    camera_position: rear_3mm
+    device: /dev/video1
+    width: 1920
+    height: 1080
+    remote_port: 5002
+  camera2:
+    camera_position: front_left
+    device: /dev/video2
+    width: 1920
+    height: 1080
+    remote_port: 5003
+  camera3:
+    camera_position: front_right
+    device: /dev/video3
+    width: 1920
+    height: 1080
+    remote_port: 5004
+  camera4:
+    camera_position: rear_left
+    device: /dev/video4
+    width: 1920
+    height: 1080
+    remote_port: 5005
+  camera5:
+    camera_position: rear_right
+    device: /dev/video5
+    width: 1920
+    height: 1080
+    remote_port: 5006
+  camera6:
+    camera_position: front_fisheye
+    device: /dev/video6
+    width: 1920
+    height: 1080
+    remote_port: 5007
+  camera7:
+    camera_position: rear_fisheye
+    device: /dev/video7
+    width: 1920
+    height: 1080
+    remote_port: 5000
